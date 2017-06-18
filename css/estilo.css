@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    padding: 50px;
+}
+
+p {
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+.pros-cons {
+    padding-top: 100px;
+}
+
+.vantagem, .desvantagem, .alerta{
+	font-weight: bold;
+}
+
+.vantagem{
+	color: green;
+}
+.desvantagem{
+	color: red;
+}
+.alerta{
+	color: orange;
+}
