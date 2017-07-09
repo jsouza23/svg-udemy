@@ -31,3 +31,7 @@ p {
 .alerta{
 	color: orange;
 }
+
+svg {
+    border: 1px solid red;
+}

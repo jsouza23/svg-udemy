@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Viewport e Viewbox</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+	
+	<h1>Viewport e Viewbox</h1>
+	
+	<!-- Viewport é o espaço ocupado pelo desenho -->
+	<!-- Viewbox é uma propriedade com 4 argumentos: eixo x. eixo y, tamnho minimo de x e tamanho minimo de y. ela vai defirnir a densidade de pixels ou qtde de informações que podem caber na viewport -->
+	<!-- Se os valores da viewbox forem iguais aos do viewport fica proporcional -->
+	<svg width='300' height='100' viewBox='0 0 300 100' style='border: 1px solid red'>
+		<circle r="25" cx="150" cy="50" fill="" stroke="" stroke-width=""/>
+	</svg>
+	
+	<!-- Se os valores da viewbox forem maiores tudo vai diminuir -->
+	<svg width='300' height='100' viewBox='0 0 600 200' style='border: 1px solid red'>
+		<circle r="25" cx="150" cy="50" fill="" stroke="" stroke-width=""/>
+	</svg>
+
+	<!-- Se os valores da viewbox forem menores tudo vai aumentar -->
+	<svg width='300' height='100' viewBox='0 0 100 50' style='border: 1px solid red'>
+		<circle r="25" cx="150" cy="50" fill="" stroke="" stroke-width=""/>
+	</svg>
+
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Elementos Containers</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+	
+	<h1>Elementos Containers</h1>
+	
+	<br>
+
+	<h2>Defs</h2>
+	
+	<!-- Reaproveitar o SVG e altera-lo -->
+	<svg>
+		<defs>
+			<circle id='meu-circulo' r="25" cx="150" cy="50" fill="" stroke="" stroke-width=""/>
+		</defs>
+
+		<use xlink:href="#meu-circulo"/>
+		<use xlink:href="#meu-circulo" x="80" y="" fill='red'/>		
+	</svg>
+
+	<h2>G</h2>
+
+	<!-- Modificar caracteristicas do mesmo grupo -->
+	<svg>
+		<g fill='red'>
+			<circle id='meu-circulo' r="25" cx="150" cy="50"/>
+			<circle id='meu-circulo' r="25" cx="240" cy="50"/>
+		</g>
+	</svg>
+
+	<h2>Symbol</h2>
+	
+	<!-- Parecido com o defs porém possui sua propria viewbox -->
+	<svg>
+		<symbol id='meu-simbolo' viewbox='0 0 600 300'>
+			<circle id='meu-circulo' r="25" cx="150" cy="50" fill="" stroke="" stroke-width=""/>
+		</symbol>
+
+		<use xlink:href="#meu-simbolo"/>
+		<use xlink:href="#meu-simbolo" x="80" y="" fill='red'/>		
+	</svg>
+
+</body>
+</html>
